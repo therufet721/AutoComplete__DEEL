@@ -1,0 +1,42 @@
+.autocomplete {
+  position: relative;
+  width: 300px;
+}
+
+.autocomplete-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #c3c3c3; /* Adds a separator between items */
+}
+
+.suggestions-list li:last-child {
+  border-bottom: none; /* Removes bottom border for the last item */
+}
+
+.suggestions-list li.highlighted {
+  background-color: #eee;
+}
